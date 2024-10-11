@@ -1,16 +1,19 @@
-import Featured from "../../components/Featured/Featured";
+import React from "react";
+
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import PreLoader from "../../components/PreLoader/PreLoader";
+import "../styles/Home.css";
+import Featured from "../../components/Featured/Featured";
 import Status from "../../components/Status/Status";
 import Tag from "../../components/Tag/Tag";
-import "../styles/Home.css";
+
 
 const Home = () => {
   return (
     <>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <Navbar />
       <div className="displayMedia">
         <Tag />

@@ -1,5 +1,7 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/views/Home.jsx";
+import Home from "./pages/views/Home.js";
+
 
 function App() {
   return (

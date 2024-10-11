@@ -1,3 +1,4 @@
+import React from "react";
 import "../Navbar/Navbar.css";
 import { useEffect } from "react";
 import { BiSolidFoodMenu } from "react-icons/bi";

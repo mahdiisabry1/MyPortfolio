@@ -3,6 +3,7 @@ import { SiJavascript } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { SiPython } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import React from "react";
 
 const Status = () => {
   return (

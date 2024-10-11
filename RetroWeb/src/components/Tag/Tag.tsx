@@ -1,3 +1,4 @@
+import React from "react";
 import "../Tag/Tag.css";
 
 const Tag = () => {

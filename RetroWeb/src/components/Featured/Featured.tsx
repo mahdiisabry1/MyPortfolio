@@ -1,11 +1,11 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import "../Featured/Featured.css";
 import blogImage from "../../assets/images/focus.jpg";
 import camping from "../../assets/images/camping.jpg";
 import gitIm from "../../assets/images/430944.jpg";
 
-const Featured = () => {
+// Functional component with no props, so we don't need to define any types for props
+const Featured: React.FC = () => {
   return (
     <div className="featured">
       <div className="elems">
@@ -29,6 +29,7 @@ const Featured = () => {
             href="https://github.com/mahdiisabry1?tab=repositories"
             target="_blank"
             className="gitHead"
+            rel="noopener noreferrer" // Added rel for security reasons when opening links in a new tab
           >
             ALL PROJECTS !
           </a>

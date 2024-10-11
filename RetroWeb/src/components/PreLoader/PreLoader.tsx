@@ -1,11 +1,12 @@
+import React from "react";
 import { useEffect } from "react";
 import "../PreLoader/PreLoader.css";
-import { preLoaderAnim } from "../../animation/PreLoader.js";
+// import  preLoaderAnim  from "animation/PreLoader.js";
 
-const PreLoader = () => {
-  useEffect(() => {
-    preLoaderAnim();
-  }, []);
+const PreLoader: React.FC = () => {
+//   useEffect(() => {
+//     preLoaderAnim(); 
+//   }, []);
 
   return (
     <div className="preloader">
