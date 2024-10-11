@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Strike&display=swap');
+
+.headline{
+    font-family: "Protest Strike", sans-serif;
+}
+
+.headline .head{
+    background-color: var(--background-clr);
+    color: var(--clr-base);
+    display: flex;
+    justify-content: center;
+    font-size: 160px;
+    letter-spacing: 1vw;
+}
+.headline .head h1{
+    transform: scaleY(1.5);
+}
+

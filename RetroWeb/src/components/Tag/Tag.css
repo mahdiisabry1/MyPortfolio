@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'ArabicIslamFont';
+    src: url('../../assets/fonts/ArabQuranIslam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.slider{
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--background-clr);
+    overflow: hidden;
+    /* border-top: 1px solid;
+    border-bottom: 1px solid; */
+}
+
+.slider h2{
+    font-family: 'ArabicIslamFont';
+    font-size: 30px;
+    color: transparent;
+    color: var(--clr-base);
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    animation: move-rtl 20s linear infinite;
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.slider:hover h2{
+    animation-play-state: paused !important;
+}
