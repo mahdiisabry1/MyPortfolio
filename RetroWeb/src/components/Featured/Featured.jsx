@@ -14,7 +14,14 @@ const Featured = () => {
             <img src={blogImage} alt="ONprocess" />
           </div>
           <h2>
-            MyBlog | Read <span className="currentStatus">NEW</span>
+            <a
+              href="https://github.com/mahdiisabry1?tab=repositories"
+              className="gitHead"
+            >
+              {" "}
+              MyBlog | Read{" "}
+            </a>
+            <span className="currentStatus">NEW</span>
           </h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
@@ -42,7 +49,11 @@ const Featured = () => {
             <img src={camping} alt="ONprocess" />
           </div>
           <h2 className="gitHead">
-            CampSite | MERN <span className="currentStatus">ONProgress</span>
+            <a href="https://github.com/mahdiisabry1/CampSite" target="_blank">
+              {" "}
+              CampSite | MERN{" "}
+            </a>
+            <span className="currentStatus">ONProgress</span>
           </h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
