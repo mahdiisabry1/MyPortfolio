@@ -21,7 +21,7 @@ const Featured = () => {
               {" "}
               MyBlog | Read{" "}
             </a>
-            <span className="currentStatus">NEW</span>
+            <span className="currentStatus">UPcoming</span>
           </h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
@@ -53,7 +53,7 @@ const Featured = () => {
               {" "}
               CampSite | MERN{" "}
             </a>
-            <span className="currentStatus">ONProgress</span>
+            <span className="currentStatus">NEW</span>
           </h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
