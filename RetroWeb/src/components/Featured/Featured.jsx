@@ -37,7 +37,7 @@ const Featured = () => {
             target="_blank"
             className="gitHead"
           >
-            ALL PROJECTS !
+            ALL PROJECTS
           </a>
           <h3>A Featured Selections - The latest work of the last years</h3>
           <h4>Tap for the Github repo</h4>

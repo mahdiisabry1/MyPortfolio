@@ -1,3 +1,4 @@
+import Description from "../../components/Description/Description";
 import Featured from "../../components/Featured/Featured";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -11,13 +12,14 @@ const Home = () => {
   return (
     <>
       <PreLoader />
-      <Navbar />
       <div className="displayMedia">
+        <Navbar />
         <Tag />
         <Featured />
         <Status />
       </div>
       <Header />
+      <Description />
       <Footer />
     </>
   );

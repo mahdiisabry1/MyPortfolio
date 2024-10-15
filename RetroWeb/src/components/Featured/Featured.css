@@ -190,3 +190,27 @@
     filter: blur(0);
     scale: 1.2;
 }
+
+@media (max-width: 1060px) {
+    .elems .elemRL{
+        display: none;
+    }
+
+    .elems:nth-child(2){
+        width: 100%;
+    }
+
+    .elems:nth-child(1),
+    .elems:nth-child(3){
+        width: 0;
+    }
+
+    .featured .elems .elemMid{
+        background-size: 25%;
+    }
+    
+    .featured .elems .elemMid:hover{
+        background-size: 35%;
+    }
+
+}
