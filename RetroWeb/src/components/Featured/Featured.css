@@ -23,7 +23,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(100%);
+    filter: grayscale(20%);
     transition: background-size 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .elems .elemRL .elem1Img img{
-    filter: blur(1px) grayscale(100%);
+    filter: blur(1px) grayscale(20%);
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -179,7 +179,7 @@
 }
 
 .elems .elemRL .elem3Img img {
-    filter: blur(1px) grayscale(100%);
+    filter: blur(1px) grayscale(20%);
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -191,7 +191,7 @@
     scale: 1.2;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1250px) {
     .elems .elemRL{
         display: none;
     }
@@ -214,3 +214,4 @@
     }
 
 }
+

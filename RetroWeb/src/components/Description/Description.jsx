@@ -4,8 +4,10 @@ import "./Description.css";
 
 const Description = () => {
   return (
-    <div className="container">
-      <div>Display Grid</div>
+    <div className="description-tag">
+      <div className="description">
+        The content is on the way  
+      </div>
     </div>
   );
 };
