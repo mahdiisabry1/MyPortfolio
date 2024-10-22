@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
       <PreLoader />
+      <Navbar />
       <div className="displayMedia">
-        <Navbar />
         <Tag />
         <Featured />
         <Status />

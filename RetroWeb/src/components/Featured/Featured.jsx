@@ -24,9 +24,7 @@ const Featured = () => {
             <span className="currentStatus">UPcoming</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-            veniam quos ducimus fugit. Molestiae repudiandae ea corporis sunt.
-            At, adipisci?
+            My blog site (under cunstruction) My research articles and news website with crud operations.  
           </p>
         </div>
       </div>
@@ -56,9 +54,7 @@ const Featured = () => {
             <span className="currentStatus">NEW</span>
           </h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-            adipisci soluta doloremque officiis incidunt voluptas ipsam
-            necessitatibus.
+            A camp ground booking app Using nextJS framework
           </p>
         </div>
       </div>

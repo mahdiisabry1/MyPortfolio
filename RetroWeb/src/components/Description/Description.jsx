@@ -4,9 +4,17 @@ import "./Description.css";
 
 const Description = () => {
   return (
-    <div className="description-tag">
+    <div className="description-main">
       <div className="description">
-        The content is on the way  
+        <div className="description2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quasi,
+          non esse nihil possimus recusandae?
+        </div>
+        <div className="descImage">Image</div>
+        <div className="description3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
+          ducimus?
+        </div>
       </div>
     </div>
   );

@@ -49,7 +49,6 @@
     font-family: "Qwitcher Grypen", cursive;
     font-weight: 700;
     font-size: 60px;
-    display: inline-block;
 }
 
 .navHeader .middleHeader h6 {
@@ -118,3 +117,26 @@
     transform: translateY(0%);
     box-shadow: 0 0;
 }
+
+.mobileMessage {
+    display: none;
+    text-align: center;
+    font-size: 10px;
+    color: var(--text-clr);
+    letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+    .desktopOnly, .desktopOnly h1 {
+            display: none;
+        }
+    
+    .mobileMessage {
+        display: block;
+    }
+
+    .navHeader{
+        height: 60px;
+    }
+}
+

@@ -37,7 +37,11 @@ const Navbar = () => {
 
   return (
     <div className="navHeader">
-      <h5>
+      <div className="mobileMessage">
+        <p>Use a wider screen </p>
+        <p>for a better view</p>
+      </div>
+      <h5 className="desktopOnly">
         Colombo, SL | {""}
         <a
           href="https://www.linkedin.com/in/mahdi-sabry-919546286/"
@@ -46,8 +50,8 @@ const Navbar = () => {
           LinkedIn
         </a>
       </h5>
-      <div className="middleHeader">
-        <h1>WEB DEVELOPER</h1>
+      <div className="middleHeader desktopOnly">
+        <h1 className="desktopOnly">WEB DEVELOPER</h1>
         {/* <h6></h6> */}
       </div>
       <div className="innerHeader">

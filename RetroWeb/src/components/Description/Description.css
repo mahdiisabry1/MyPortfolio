@@ -1,7 +1,32 @@
-.description-tag{
+.description-main{
     padding: 1vw 2vw;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    
 }
 
 .description{
- font-family: 'AthenaFont', sans-serif;
+ /* font-family: 'AthenaFont', sans-serif; */
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.description2{
+    background-color: bisque;
+    height: 200px;
+    width: 20%;
+}
+
+.descImage{
+    height: 200px;
+    width: 20%;
+    border: 7px solid var(--background-clr);
+}
+.description3{
+    height: 200px;
+    width: 60%;
+    background-color: blue;
 }
