@@ -1,96 +1,106 @@
-@import url('https://fonts.cdnfonts.com/css/garlic');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.cdnfonts.com/css/garlic");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'BounesvaFont';
-    src: url('./assets/fonts/Bounesva.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "BounesvaFont";
+  src: url("./assets/fonts/Bounesva.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'AthenaFont';
-    src: url('./assets/fonts/Athena.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "AthenaFont";
+  src: url("./assets/fonts/Athena.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'ArabicIslamFont';
-    src: url('./assets/fonts/ArabQuranIslam.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "ArabicIslamFont";
+  src: url("./assets/fonts/ArabQuranIslam.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 
 :root {
-    --clr-base: #fffae5;
-    --clr-base2: #e3e3e3;
-    --border-clr: #222;
-    --text-clr: #0d0d0d;
-    --secondary-txt: #232738;
-    --primary-clr: #3a435d;
-    --current-clr: #c1bd78;
-    --background-clr: #080808;
-    --background-linear: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(167, 167, 167, 1) 52%, rgba(255, 255, 255, 1) 100%, rgba(17, 17, 17, 1) 100%);
+  --clr-base: #fffae5;
+  --clr-base2: #e3e3e3;
+  --border-clr: #222;
+  --text-clr: #0d0d0d;
+  --secondary-txt: #232738;
+  --primary-clr: #3a435d;
+  --current-clr: #c1bd78;
+  --background-clr: #080808;
+  --background-linear: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(167, 167, 167, 1) 52%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(17, 17, 17, 1) 100%
+  );
 }
 
 .darkmode {
-    --clr-base: #1b1821;
-    --clr-base2: #171717;
-    --border-clr: #b3b3b3;
-    --text-clr: #f1f1f1;
-    --secondary-txt: #b3b3b3;
-    --primary-clr: #7d7e82;
-    --current-clr: #898200;
-    --background-clr: #ffffff;
-    --background-linear: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%, rgba(68, 68, 68, 1) 52%, rgba(17, 17, 17, 1) 100%, rgba(13, 13, 13, 1) 100%);
+  --clr-base: #1b1821;
+  --clr-base2: #171717;
+  --border-clr: #b3b3b3;
+  --text-clr: #f1f1f1;
+  --secondary-txt: #b3b3b3;
+  --primary-clr: #7d7e82;
+  --current-clr: #898200;
+  --background-clr: #ffffff;
+  --background-linear: linear-gradient(
+    90deg,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(68, 68, 68, 1) 52%,
+    rgba(17, 17, 17, 1) 100%,
+    rgba(13, 13, 13, 1) 100%
+  );
 }
 html,
 body {
-    font-family: 'BounesvaFont', sans-serif;
-    -webkit-user-select: none;
-    /* Safari */
-    -ms-user-select: none;
-    /* IE 10 and IE 11 */
-    user-select: none;
-    /* Standard syntax */
-    min-height: 100vh;
-    width: 100%;
-    background-color: var(--clr-base);
-    color: var(--text-clr);
+  font-family: "BounesvaFont", sans-serif;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--clr-base);
+  color: var(--text-clr);
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-.container{
-    padding: 2vw;
+.container {
+  padding: 2vw;
 }
 
 /* For WebKit-based browsers */
 ::-webkit-scrollbar {
-    width: 8px;
-    /* width of the scrollbar */
+  width: 8px;
+  /* width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background-clr);
-    /* background of the scrollbar track */
+  background: var(--background-clr);
+  /* background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary-clr);
-    /* color of the scrollbar handle */
-    border-radius: 20px;
-    /* roundness of the scrollbar handle */
-    border: 3px solid var(--background-clr);
-    /* adds space around scrollbar handle */
+  background-color: var(--primary-clr);
+  /* color of the scrollbar handle */
+  border-radius: 20px;
+  /* roundness of the scrollbar handle */
+  border: 3px solid var(--background-clr);
+  /* adds space around scrollbar handle */
 }

@@ -51,7 +51,7 @@ const Navbar = () => {
         </a>
       </h5>
       <div className="middleHeader desktopOnly">
-        <h1 className="desktopOnly">WEB DEVELOPER</h1>
+        <h1 className="desktopOnly">Computer Scientist</h1>
         {/* <h6></h6> */}
       </div>
       <div className="innerHeader">

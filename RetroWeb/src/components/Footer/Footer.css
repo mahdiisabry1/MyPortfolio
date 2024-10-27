@@ -1,0 +1,16 @@
+.footerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialMedia .mediaIcons {
+  list-style-type: circle;
+  display: flex;
+  gap: 40px;
+}
+
+.socialMedia .mediaIcons li:hover{
+    text-decoration: underline;
+    list-style-type: square;
+}
