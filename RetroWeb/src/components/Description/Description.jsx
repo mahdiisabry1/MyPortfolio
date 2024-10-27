@@ -4,6 +4,7 @@ import "./Description.css";
 import leftImg from "../../assets/images/v55.png";
 import rightImg from "../../assets/images/v34.png";
 import techImg from "../../assets/images/techstack.png";
+import htmlpng from "../../assets/images/pngwing.com.png";
 
 const Description = () => {
   return (
@@ -49,11 +50,31 @@ const Description = () => {
         </div>
       </div>
       <div className="skills-container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="techstack-right">
+          <div className="fronend">
+            <h3>FRONTEND</h3>
+            <div className="fronendImgStack TechImgStack">
+              <img src={htmlpng} alt="HTML" />
+              <img src="#" alt="CSS" />
+              <img src="#" alt="Javascript" />
+              <img src="#" alt="React" />
+              <img src="#" alt="Vue" />
+              <img src="#" alt="Angular" />
+            </div>
+          </div>
+          <div className="backend">
+            <h3>BACKEND</h3>
+            <div className="backendImgStack TechImgStack">
+              <img src="#" alt="Python" />
+              <img src="#" alt="Java" />
+              <img src="#" alt="Node" />
+            </div>
+          </div>
+        </div>
+        <div className="services-container">
+          this for the sevicese container
+        </div>
+        <div className="techstack-left">this is for the tech stack again</div>
       </div>
     </div>
   );

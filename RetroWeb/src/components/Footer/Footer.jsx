@@ -8,17 +8,20 @@ const Footer = () => {
         <div className="socialMedia">
           <ul className="mediaIcons">
             <li>
-              <a href="" target="_blank">
-                Twitter
+              <a href="https://x.com/mahdiisabry" target="_blank">
+                X
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
+              <a href="https://www.instagram.com/mahdii.sabry/" target="_blank">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/mahdi-sabry-919546286/"
+                target="_blank"
+              >
                 LinkedIn
               </a>
             </li>

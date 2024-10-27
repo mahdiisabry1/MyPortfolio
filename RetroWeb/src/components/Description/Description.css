@@ -13,7 +13,8 @@
 .leftRightImg {
   height: 100%;
   width: 100%;
-  border: 2px solid;
+  border: 4px solid;
+  overflow: hidden;
 }
 .leftRightImg img {
   width: 100%;
@@ -25,6 +26,7 @@
 
 .leftRightImg img:hover {
   filter: grayscale(0);
+  scale: 1.1;
 }
 
 .middle-desc {
@@ -99,4 +101,23 @@
 
 .secondPost {
   padding: 15px 20px;
+}
+
+.skills-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 550px;
+  margin-top: 40px;
+  border: 3px solid;
+}
+
+.techstack-right{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.TechImgStack{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
