@@ -26,7 +26,7 @@
 
 .leftRightImg img:hover {
   filter: grayscale(0);
-  scale: 1.1;
+  scale: 1.01;
 }
 
 .middle-desc {
@@ -35,7 +35,7 @@
   gap: 5px;
 }
 
-.ImageEye {
+.filterChange {
   width: 100%;
   border: 10px solid;
 }
@@ -80,18 +80,17 @@
 }
 
 .imgcover img {
-  height: 60%;
+  height: 90%;
   opacity: 0.3;
   filter: grayscale(100%);
   transition: all ease.5s;
 }
 
-.firstPost:hover .imgcover img{
-    height: 70%;
-    opacity: 0.7;
-    filter: grayscale(0);
+.firstPost:hover .imgcover img {
+  height: 100%;
+  opacity: 0.5;
+  filter: grayscale(0);
 }
-
 
 .text-overlay {
   position: relative;
@@ -103,21 +102,65 @@
   padding: 15px 20px;
 }
 
-.skills-container{
+.skills-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 550px;
-  margin-top: 40px;
+  margin-top: 20px;
   border: 3px solid;
 }
 
-.techstack-right{
+.techstack-side {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.TechImgStack{
+.techstack-side .frontandback h3 {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleY(1.2);
+}
+
+.TechImgStack {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 80%;
+  justify-items: center;
+  align-items: center;
+}
+
+.TechImgStack img {
+  width: 50%;
+}
+
+.reactRotation {
+  transition: transform 0.5s;
+}
+
+.reactRotation:hover {
+  transform: rotate(180deg); /* Rotates 180 degrees */
+}
+
+.nextIcon {
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 1s ease;
+}
+
+.nextIcon:hover {
+  transform: rotate(360deg);
+}
+
+.filterproperty{
+  filter: grayscale(100%);
+  transition: all ease 0.3s;
+}
+
+.filterproperty:hover{
+  filter: grayscale(0);
 }

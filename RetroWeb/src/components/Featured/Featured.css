@@ -113,7 +113,7 @@
 
 .elems .elemRL .elem1Img img:hover{
     filter: blur(0);
-    scale: 1.2;
+    scale: 1.05;
 }
 
 
@@ -141,7 +141,6 @@
 .elems .elemMid a {
     position: relative;
     text-decoration: none;
-    /* Remove default underline */
 }
 
 .elems .elemMid a::after {
@@ -151,9 +150,7 @@
     bottom: 5px;
     width: 0;
     height: 2px;
-    /* underline thickness */
     background-color: currentColor;
-    /* Use link color */
     transition: width 0.3s ease-out;
 }
 
@@ -188,7 +185,7 @@
 
 .elems .elemRL .elem3Img img:hover {
     filter: blur(0);
-    scale: 1.2;
+    scale: 1.05;
 }
 
 @media (max-width: 1250px) {

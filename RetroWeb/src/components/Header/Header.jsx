@@ -5,7 +5,9 @@ const Header = () => {
     <>
       <div className="headline container">
         <div className="head">
-          <h1>M|MAHDI</h1>
+          <h1>
+            M|MAHDI
+          </h1>
         </div>
       </div>
     </>

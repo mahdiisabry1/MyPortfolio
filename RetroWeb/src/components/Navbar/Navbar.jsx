@@ -34,7 +34,6 @@ const Navbar = () => {
     }
   }, []);
 
-
   return (
     <div className="navHeader">
       <div className="mobileMessage">
@@ -55,6 +54,8 @@ const Navbar = () => {
         {/* <h6></h6> */}
       </div>
       <div className="innerHeader">
+        <a href="/">index</a>
+        <a href="#">contact</a>
         <button className="btn-class-name" onClick={darkmode}>
           <span className="back"></span>
           <span className="front"></span>

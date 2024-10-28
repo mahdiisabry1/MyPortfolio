@@ -74,11 +74,17 @@ body {
   width: 100%;
   background-color: var(--clr-base);
   color: var(--text-clr);
+  cursor: none;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: none;
+}
+
+button{
+  cursor: none;
 }
 
 .container {

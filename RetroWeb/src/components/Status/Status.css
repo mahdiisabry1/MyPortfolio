@@ -1,29 +1,32 @@
-
-.statusBar{
-    background: var(--background-linear);
-    gap: 10px;
-    height: 50px;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+.statusBar {
+  background: var(--background-linear);
+  gap: 10px;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
 }
 
-.statusTag{
-    padding: 5px;
-    text-align: center;
+.statusTag {
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.statusTag h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.statusTag h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
 }
 
-
-
-
-
-
+@media screen and (max-width: 1100px) {
+  .statusTag h2 {
+    font-size: 17px;
+  }
+}

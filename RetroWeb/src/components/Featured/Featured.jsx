@@ -49,7 +49,7 @@ const Featured = () => {
           <h2 className="gitHead">
             <a href="https://github.com/mahdiisabry1/CampSite" target="_blank">
               {" "}
-              CampSite | MERN{" "}
+              CampSite | MERN + N{" "}
             </a>
             <span className="currentStatus">NEW</span>
           </h2>

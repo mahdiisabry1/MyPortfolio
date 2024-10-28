@@ -15,8 +15,7 @@
 }
 
 .slider h2{
-    font-family: 'ArabicIslamFont';
-    font-size: 15px;
+    font-size: 18px;
     color: transparent;
     color: var(--clr-base);
     white-space: nowrap;
@@ -24,12 +23,24 @@
     animation: move-rtl 20s linear infinite;
 }
 
+.slider h2 a{
+    background-color: var(--clr-base2);
+    color: var(--text-clr);
+    padding: 5px;
+    align-items: center;
+    transition: all ease.5s;
+}
+
+.slider h2 a:hover{
+    background-color: #25D366;
+}
+
 @keyframes move-rtl{
     0%{
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
     100%{
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 }
 
