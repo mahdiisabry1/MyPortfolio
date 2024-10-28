@@ -60,7 +60,10 @@ const Navbar = () => {
           <span className="back"></span>
           <span className="front"></span>
         </button>
-        <BiSolidFoodMenu className="ri-menu-4-line" />
+        <BiSolidFoodMenu
+          className="ri-menu-4-line"
+          style={{ cursor: "none" }}
+        />
       </div>
     </div>
   );

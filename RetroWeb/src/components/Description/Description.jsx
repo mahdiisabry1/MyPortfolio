@@ -25,7 +25,12 @@ const Description = () => {
         </div>
         <div className="middle-desc">
           <div className="filterChange">
-            <button>click</button>
+            <div className="imageBanner">
+              <img src={{}} alt="" />
+            </div>
+            <div className="bannerDesc">
+              <h3>hello world</h3>
+            </div>
           </div>
           <div className="desc-posts">
             <div className="post firstPost">

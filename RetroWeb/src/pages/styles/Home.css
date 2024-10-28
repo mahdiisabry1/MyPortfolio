@@ -8,14 +8,43 @@ body {
 }
 
 /* Custom cursor styles */
+/* Main cursor style */
 .cursor {
   position: fixed;
-  width: 20px;
-  height: 20px;
-  background-color: var(--current-clr);
-  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: 3px solid gray; /* Outer border to form a crosshair */
+  border-radius: 50%; /* Rounded edges */
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease;
   z-index: 1000;
+  background: transparent; /* Transparent to focus on the crosshair */
+  box-sizing: border-box; /* Ensures proper sizing for the crosshair */
+}
+
+/* Adding crosshairs with pseudo-elements */
+.cursor::before,
+.cursor::after {
+  content: '';
+  position: absolute;
+  background-color: red;
+}
+
+/* Horizontal line */
+.cursor::before {
+  width: 14px; /* Adjust for desired size */
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Vertical line */
+.cursor::after {
+  width: 2px;
+  height: 14px; /* Adjust for desired size */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

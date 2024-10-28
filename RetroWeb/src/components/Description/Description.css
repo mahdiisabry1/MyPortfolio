@@ -40,6 +40,16 @@
   border: 10px solid;
 }
 
+.imageBanner{
+  width: 100%;
+}
+
+.imageBanner img{
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
 .desc-posts {
   display: flex;
   align-items: center;

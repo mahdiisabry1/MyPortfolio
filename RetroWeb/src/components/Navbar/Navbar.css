@@ -78,7 +78,6 @@
     height: 20px;
     border: none;
     outline: none;
-    cursor: pointer;
     user-select: none;
     touch-action: manipulation;
     outline: 10px solid rgb(var(--primary), .5);
