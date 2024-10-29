@@ -42,11 +42,8 @@ const Navbar = () => {
       </div>
       <h5 className="desktopOnly">
         Colombo, SL | {""}
-        <a
-          href="https://www.linkedin.com/in/mahdi-sabry-919546286/"
-          target="_blank"
-        >
-          LinkedIn
+        <a href="https://github.com/mahdiisabry1" target="_blank">
+          github
         </a>
       </h5>
       <div className="middleHeader desktopOnly">
@@ -54,8 +51,8 @@ const Navbar = () => {
         {/* <h6></h6> */}
       </div>
       <div className="innerHeader">
-        <a href="/">index</a>
-        <a href="#">contact</a>
+        <a href="/">Index</a>
+        <a href="#">Contact</a>
         <button className="btn-class-name" onClick={darkmode}>
           <span className="back"></span>
           <span className="front"></span>

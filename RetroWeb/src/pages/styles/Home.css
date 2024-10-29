@@ -1,7 +1,7 @@
 @media (max-width: 900px) {
-    .displayMedia{
-        display: none;
-    }
+  .displayMedia {
+    display: none;
+  }
 }
 body {
   cursor: none;
@@ -11,40 +11,50 @@ body {
 /* Main cursor style */
 .cursor {
   position: fixed;
-  width: 44px;
-  height: 44px;
-  border: 3px solid gray; /* Outer border to form a crosshair */
-  border-radius: 50%; /* Rounded edges */
+  width: 54px;
+  height: 54px;
+  border: 2px solid var(--secondary-txt);
+  border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
   z-index: 1000;
   background: transparent; /* Transparent to focus on the crosshair */
   box-sizing: border-box; /* Ensures proper sizing for the crosshair */
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.6);
+  animation: pulseSize 0.3s infinite alternate;
 }
 
-/* Adding crosshairs with pseudo-elements */
-.cursor::before,
-.cursor::after {
-  content: '';
-  position: absolute;
-  background-color: red;
-}
-
-/* Horizontal line */
 .cursor::before {
-  width: 14px; /* Adjust for desired size */
-  height: 2px;
+  content: "";
+  position: absolute;
+  width: 3px; /* Adjust for desired size of the inner circle */
+  height: 3px; /* Adjust for desired size of the inner circle */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 50%; /* Make it a circle */
+  background: var(--secondary-txt); /* White color */
+  animation: aimSize 0.2s infinite alternate;
 }
 
-/* Vertical line */
-.cursor::after {
-  width: 2px;
-  height: 14px; /* Adjust for desired size */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@keyframes pulseSize {
+  0% {
+    width: 52px;
+    height: 52px;
+  }
+  100% {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@keyframes aimSize {
+  0% {
+    width: 4.5px;
+    height: 4.5px;
+  }
+  100% {
+    width: 3px;
+    height: 3px;
+  }
 }

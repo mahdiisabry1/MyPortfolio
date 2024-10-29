@@ -19,12 +19,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "ArabicIslamFont";
-  src: url("./assets/fonts/ArabQuranIslam.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 :root {
   --clr-base: #fffae5;
@@ -83,7 +77,7 @@ a {
   cursor: none;
 }
 
-button{
+button, input, label{
   cursor: none;
 }
 
