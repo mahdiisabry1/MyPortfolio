@@ -16,7 +16,7 @@ import Kubernetes from "../../assets/images/kubernets.png";
 import jenkinslogo from "../../assets/icons/Jenkins_logo.svg.png";
 import comic from "../../assets/icons/10187403.jpg";
 import westminsteruniversity from "../../assets/images/westminsteruniversity.jpeg";
-import wallpapercat from "../../assets/images/wallpapercat.jpg";
+import soldier from "../../assets/icons/434500.jpg";
 import gitlab from "../../assets/icons/gitlab.png";
 import dockericon from "../../assets/icons/dockerimage.png";
 
@@ -97,7 +97,7 @@ const Description = () => {
               className={`post firstPost ${isFiltered ? "filterproperty" : ""}`}
             >
               <div className="comcicart">
-                <img src={wallpapercat} alt="" />
+                <img src={soldier} alt="" />
               </div>
               <div className="text-overlay">
                 <h3 className="profile-sm">
@@ -106,9 +106,8 @@ const Description = () => {
                   as well as its underlying networking structures.
                 </h3>
                 <h3 className="academic-prof">
-                  <span className="computerScience">Computer Science </span>
-                  Student Exploring Cybersecurity, Robotics, AI and Machine
-                  Learning.
+                  Computer Science Student Exploring Cybersecurity, Robotics, AI
+                  and Machine Learning.
                 </h3>
                 <h3 className="profile-tags">
                   Hobbies : Islam | Politics | History.
