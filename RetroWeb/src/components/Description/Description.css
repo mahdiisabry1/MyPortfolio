@@ -30,8 +30,8 @@
 .middle-desc {
   display: grid;
   position: relative;
-  grid-template-rows: 1fr 1.5fr;
-  gap: 3px;
+  grid-template-rows: 1fr 2fr;
+  gap: 2px;
   z-index: 2;
 }
 
@@ -41,7 +41,7 @@
   height: 4em;
   background-color: var(--clr-base);
   left: 50%;
-  top: 40%;
+  top: 34%;
   transform: translate(-50%, -50%);
   border: 5px solid;
   border-radius: 50%;
@@ -152,7 +152,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(2px);
   z-index: 1;
 }
 
@@ -171,7 +170,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 3px;
+  gap: 2px;
 }
 
 .desc-posts .post {
@@ -186,11 +185,14 @@
 
 .desc-posts .post .comcicart {
   position: absolute;
+  display: inline-block;
   width: 100%;
   height: 100%;
 }
 
+
 .desc-posts .post .comcicart img {
+  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -217,16 +219,35 @@
 }
 
 .text-overlay {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   z-index: 2;
   user-select: text;
   padding: 15px 20px;
-  color: #ffff40;
+  color: var(--clr-base2);
+  background-color: var(--baseclr-change);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.comcicart:hover .text-overlay {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .text-overlay h3::selection {
   background-color: black;
 }
+
+.text-overlay .uowImg {
+  height: 75%;
+  width: 100%;
+}
+
 
 .skills-container {
   display: grid;
@@ -256,7 +277,6 @@
   width: 100%;
   height: 80%;
   justify-items: center;
-  align-items: center;
 }
 
 .TechImgStack img {

@@ -5,20 +5,26 @@ import rightImg from "../../assets/images/v34.png";
 import reacticon from "../../assets/images/reacticon.png";
 import nexticon from "../../assets/images/next.png";
 import wordpressicon from "../../assets/images/wordpress.png";
-import Angularicon from "../../assets/images/Angular.png";
+import springBoot from "../../assets/icons/springBootpng.png";
 import Elementoricon from "../../assets/images/Elementor.png";
-import webflowicon from "../../assets/images/webflow.png";
+import tailwind from "../../assets/icons/tailwindicon.png";
 import pythonicon from "../../assets/images/pythonp.png";
 import javaicon from "../../assets/images/java.png";
 import javascripticon from "../../assets/images/JavaScript-logo.png";
 import mysqlicon from "../../assets/images/mysql.png";
 import Kubernetes from "../../assets/images/kubernets.png";
 import jenkinslogo from "../../assets/icons/Jenkins_logo.svg.png";
-import comic from "../../assets/icons/10187403.jpg";
-import westminsteruniversity from "../../assets/images/westminsteruniversity.jpeg";
-import soldier from "../../assets/icons/434500.jpg";
+import palestine from "../../assets/icons/freePalestine.jpg";
+import vintageschool from "../../assets/images/vintageschool.jpg";
 import gitlab from "../../assets/icons/gitlab.png";
 import dockericon from "../../assets/icons/dockerimage.png";
+import DallE from "../../assets/icons/DallE.webp";
+import mongoicon from "../../assets/icons/mongoicon.png"
+import posgresicon from "../../assets/icons/postgres.png";
+import djangoicon from "../../assets/icons/djangoicon.png";
+import nodeicon from "../../assets/icons/nodejsicon.png";
+import uowicon from "../../assets/icons/UOW.png";
+
 
 const Description = () => {
   const [isFiltered, setIsFiltered] = useState(true);
@@ -78,18 +84,12 @@ const Description = () => {
           </div>
           <div className={`careerBanner ${isFiltered ? "filterproperty" : ""}`}>
             <div className="imageBanner">
-              <img src={comic} alt="" />
+              <img src={palestine} alt="" />
             </div>
             <div className="bannerDesc">
-              <div className="serviceBanner-1">
-                <h1>Web Application developer</h1>
-              </div>
-              <div className="serviceBanner-2">
-                <h1>Devops Engineer for web</h1>
-              </div>
-              <div className="serviceBanner-3">
-                <h1>web security</h1>
-              </div>
+              <div className="serviceBanner-1"></div>
+              <div className="serviceBanner-2"></div>
+              <div className="serviceBanner-3"></div>
             </div>
           </div>
           <div className="desc-posts">
@@ -97,21 +97,20 @@ const Description = () => {
               className={`post firstPost ${isFiltered ? "filterproperty" : ""}`}
             >
               <div className="comcicart">
-                <img src={soldier} alt="" />
-              </div>
-              <div className="text-overlay">
-                <h3 className="profile-sm">
-                  Delving into the complexities of the web, with a focus on
-                  understanding the internet’s surface, deep, and dark layers,
-                  as well as its underlying networking structures.
-                </h3>
-                <h3 className="academic-prof">
-                  Computer Science Student Exploring Cybersecurity, Robotics, AI
-                  and Machine Learning.
-                </h3>
-                <h3 className="profile-tags">
-                  Hobbies : Islam | Politics | History.
-                </h3>
+                <img src={DallE} alt="" />
+                <h2>Description</h2>
+                <div className="text-overlay">
+                  <h3 className="profile-sm">
+                    Delving into the complexities of the web, with a focus on
+                    understanding the internet’s surface, deep, and dark layers,
+                    as well as its underlying networking structures.
+                  </h3>
+                  <h3 className="academic-prof">
+                    Computer Science Student Exploring Cybersecurity, Robotics,
+                    AI and Machine Learning.
+                  </h3>
+                  <h3 className="profile-tags">Hobbies : History</h3>
+                </div>
               </div>
             </div>
             <div
@@ -120,12 +119,21 @@ const Description = () => {
               }`}
             >
               <div className="comcicart">
-                <img src={westminsteruniversity} alt="" />
-              </div>
-              <div className="text-overlay">
-                <h3>Informatics institute of technology</h3>
-                <h3>University of westminster</h3>
-                <h3>Expected 2026</h3>
+                <img src={vintageschool} alt="" />
+                <div className="text-overlay">
+                  <h3>Informatics institute of technology</h3>
+                  <h3>University of westminster</h3>
+                  <h3>Expected 2026</h3>
+                  <div
+                    className={`uowImg ${isFiltered ? "filterproperty" : ""}`}
+                  >
+                    <img
+                      src={uowicon}
+                      alt=""
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -152,8 +160,8 @@ const Description = () => {
               />
               <img src={nexticon} alt="Next" className="nextIcon" />
               <img
-                src={Angularicon}
-                alt="Javascript"
+                src={tailwind}
+                alt="tailwind"
                 className={`reactRotation ${
                   isFiltered ? "filterproperty" : ""
                 }`}
@@ -168,13 +176,6 @@ const Description = () => {
               <img
                 src={Elementoricon}
                 alt="Vue"
-                className={`reactRotation ${
-                  isFiltered ? "filterproperty" : ""
-                }`}
-              />
-              <img
-                src={webflowicon}
-                alt="Angular"
                 className={`reactRotation ${
                   isFiltered ? "filterproperty" : ""
                 }`}
@@ -199,9 +200,9 @@ const Description = () => {
                 alt="Javascript"
                 className="filterproperty"
               />
-              <img src={wordpressicon} alt="React" className="filterproperty" />
-              <img src={Elementoricon} alt="Vue" className="filterproperty" />
-              <img src={webflowicon} alt="Angular" className="filterproperty" />
+              <img src={springBoot} alt="React" className="filterproperty" />
+              <img src={djangoicon} alt="Vue" className="filterproperty" />
+              <img src={nodeicon} alt="Angular" className="filterproperty" />
             </div>
           </div>
         </div>
@@ -228,15 +229,16 @@ const Description = () => {
                 alt="mysql"
                 className="mysqlRotation filterproperty"
               />
-              <img src={nexticon} alt="Next" className="nextIcon" />
               <img
-                src={Angularicon}
-                alt="Javascript"
+                src={mongoicon}
+                alt="mongo"
+                className="mongoIcon filterproperty"
+              />
+              <img
+                src={posgresicon}
+                alt="postgres"
                 className="filterproperty"
               />
-              <img src={wordpressicon} alt="React" className="filterproperty" />
-              <img src={Elementoricon} alt="Vue" className="filterproperty" />
-              <img src={webflowicon} alt="Angular" className="filterproperty" />
             </div>
           </div>
           <div className="backend frontandback">
@@ -254,8 +256,6 @@ const Description = () => {
                 alt="React"
                 className=" reactRotation filterproperty"
               />
-              <img src={Elementoricon} alt="Vue" className="filterproperty" />
-              <img src={webflowicon} alt="Angular" className="filterproperty" />
             </div>
           </div>
         </div>

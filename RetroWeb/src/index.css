@@ -29,6 +29,7 @@
   --primary-clr: #3a435d;
   --current-clr: #c1bd78;
   --background-clr: #080808;
+  --baseclr-change: #1b1821;
   --background-linear: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
@@ -47,6 +48,7 @@
   --primary-clr: #7d7e82;
   --current-clr: #898200;
   --background-clr: #ffffff;
+  --baseclr-change: #fffae5;
   --background-linear: linear-gradient(
     90deg,
     rgba(15, 15, 15, 1) 0%,
