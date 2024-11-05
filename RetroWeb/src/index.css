@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "LongBeach";
+  src: url("./assets/fonts/LongBeach.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 :root {
   --clr-base: #fffae5;

@@ -7,6 +7,7 @@ import PreLoader from "../../components/PreLoader/PreLoader";
 import Status from "../../components/Status/Status";
 import Tag from "../../components/Tag/Tag";
 import "../styles/Home.css";
+import Welcome from "../../components/Welcome/Welcome";
 
 const Home = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -37,6 +38,7 @@ const Home = () => {
       <Navbar />
       <div className="displayMedia">
         <Tag />
+        <Welcome />
         <Status />
       </div>
       <Header />

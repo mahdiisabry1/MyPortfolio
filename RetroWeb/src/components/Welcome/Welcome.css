@@ -1,0 +1,13 @@
+.main-banner {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  border-top: 1px solid;
+  margin-bottom: 5px;
+}
+

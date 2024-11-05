@@ -97,7 +97,12 @@ const Description = () => {
             >
               <div className="comcicart">
                 <img src={DallE} alt="" />
-                <h2 className="descritpion-rotate">Description</h2>
+                <h2
+                  className="descritpion-rotate"
+                  style={{ borderBottom: "8px solid" }}
+                >
+                  Description
+                </h2>
                 <div className="text-overlay">
                   <h3 className="profile-sm">
                     Delving into the complexities of the web, with a focus on
@@ -108,7 +113,7 @@ const Description = () => {
                     Computer Science Student Exploring Cybersecurity, Robotics,
                     AI and Machine Learning.
                   </h3>
-                  <h3 className="profile-tags">Hobbies : History</h3>
+                  <h3 className="profile-tags">Hobbies : GeoPolitics</h3>
                 </div>
               </div>
             </div>
@@ -119,6 +124,12 @@ const Description = () => {
             >
               <div className="comcicart">
                 <img src={vintageschool} alt="" />
+                <h2
+                  className="descritpion-rotate"
+                  style={{ borderBottom: "8px solid" }}
+                >
+                  Education
+                </h2>
                 <div className="text-overlay">
                   <h3>Informatics institute of technology</h3>
                   <h3>University of westminster</h3>
@@ -146,9 +157,7 @@ const Description = () => {
         </div>
       </div>
       <Featured isFiltered={isFiltered} />
-      <div className="skill-container">
-            
-      </div>
+      <div className="skill-container"></div>
     </div>
   );
 };

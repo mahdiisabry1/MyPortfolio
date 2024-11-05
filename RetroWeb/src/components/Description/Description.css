@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-.profile-desc .information{
+.profile-desc .information {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .information.show {
-  top: 0; 
+  top: 0;
 }
 
 .leftRightImg {
@@ -68,7 +68,7 @@
 .middle-desc .lightup-btn::after {
   content: "Light up the screen";
   position: absolute;
-  bottom: 125%; 
+  bottom: 125%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
@@ -208,7 +208,7 @@
 }
 
 .desc-posts .post .comcicart img {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -219,6 +219,9 @@
   position: absolute;
   color: var(--text-clr);
   background-color: var(--clr-base2);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
 .academic-prof {
@@ -252,7 +255,7 @@
   color: var(--clr-base2);
   background-color: var(--baseclr-change);
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(300px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -270,7 +273,6 @@
   width: 100%;
 }
 
-
 .filterproperty {
   filter: grayscale(100%);
   transition: all ease 0.3s;
@@ -280,7 +282,7 @@
   filter: grayscale(0);
 }
 
-.skill-container{
+.stack-slider {
   height: 100px;
   width: 100%;
   background-color: #7d7c7e;
