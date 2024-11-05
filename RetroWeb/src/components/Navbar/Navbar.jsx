@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
       <div className="innerHeader">
         <a href="/">Index</a>
-        <a href="#">Contact</a>
+        <a href="/contact">Contact</a>
         <button className="btn-class-name" onClick={darkmode}>
           <span className="back"></span>
           <span className="front"></span>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Description from "../../components/Description/Description";
-import Featured from "../../components/Featured/Featured";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
@@ -38,7 +37,6 @@ const Home = () => {
       <Navbar />
       <div className="displayMedia">
         <Tag />
-        <Featured />
         <Status />
       </div>
       <Header />

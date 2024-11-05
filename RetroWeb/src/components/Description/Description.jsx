@@ -2,29 +2,11 @@ import { useState } from "react";
 import "./Description.css";
 import leftImg from "../../assets/images/v55.png";
 import rightImg from "../../assets/images/v34.png";
-import reacticon from "../../assets/images/reacticon.png";
-import nexticon from "../../assets/images/next.png";
-import wordpressicon from "../../assets/images/wordpress.png";
-import springBoot from "../../assets/icons/springBootpng.png";
-import Elementoricon from "../../assets/images/Elementor.png";
-import tailwind from "../../assets/icons/tailwindicon.png";
-import pythonicon from "../../assets/images/pythonp.png";
-import javaicon from "../../assets/images/java.png";
-import javascripticon from "../../assets/images/JavaScript-logo.png";
-import mysqlicon from "../../assets/images/mysql.png";
-import Kubernetes from "../../assets/images/kubernets.png";
-import jenkinslogo from "../../assets/icons/Jenkins_logo.svg.png";
 import palestine from "../../assets/icons/freePalestine.jpg";
 import vintageschool from "../../assets/images/vintageschool.jpg";
-import gitlab from "../../assets/icons/gitlab.png";
-import dockericon from "../../assets/icons/dockerimage.png";
 import DallE from "../../assets/icons/DallE.webp";
-import mongoicon from "../../assets/icons/mongoicon.png"
-import posgresicon from "../../assets/icons/postgres.png";
-import djangoicon from "../../assets/icons/djangoicon.png";
-import nodeicon from "../../assets/icons/nodejsicon.png";
 import uowicon from "../../assets/icons/UOW.png";
-
+import Featured from "../Featured/Featured";
 
 const Description = () => {
   const [isFiltered, setIsFiltered] = useState(true);
@@ -33,9 +15,23 @@ const Description = () => {
     setIsFiltered(!isFiltered);
   };
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleClick = () => {
+    setIsVisible(!isVisible); // Toggle visibility state
+  };
+
+  const handleHideClick = (e) => {
+    e.stopPropagation();
+    setIsVisible(false);
+  };
+
   return (
     <div className="profile-container container">
       <div className="profile-desc">
+        <div className={`information ${isVisible ? "show" : ""}`}>
+          <h1 onClick={handleHideClick}>X</h1>
+        </div>
         <div className={`leftRightImg ${isFiltered ? "filterproperty" : ""}`}>
           <img src={leftImg} alt="" />
         </div>
@@ -82,7 +78,10 @@ const Description = () => {
               </span>
             </label>
           </div>
-          <div className={`careerBanner ${isFiltered ? "filterproperty" : ""}`}>
+          <div
+            className={`careerBanner ${isFiltered ? "filterproperty" : ""}`}
+            onClick={handleClick}
+          >
             <div className="imageBanner">
               <img src={palestine} alt="" />
             </div>
@@ -98,7 +97,7 @@ const Description = () => {
             >
               <div className="comcicart">
                 <img src={DallE} alt="" />
-                <h2>Description</h2>
+                <h2 className="descritpion-rotate">Description</h2>
                 <div className="text-overlay">
                   <h3 className="profile-sm">
                     Delving into the complexities of the web, with a focus on
@@ -146,119 +145,9 @@ const Description = () => {
           <img src={rightImg} alt="" />
         </div>
       </div>
-      <div className="skills-container">
-        <div className="techstack-side">
-          <div className="frontend frontandback">
-            <h3>FRONTEND</h3>
-            <div className="fronendImgStack TechImgStack">
-              <img
-                src={reacticon}
-                alt="React"
-                className={`reactRotation ${
-                  isFiltered ? "filterproperty" : ""
-                }`}
-              />
-              <img src={nexticon} alt="Next" className="nextIcon" />
-              <img
-                src={tailwind}
-                alt="tailwind"
-                className={`reactRotation ${
-                  isFiltered ? "filterproperty" : ""
-                }`}
-              />
-              <img
-                src={wordpressicon}
-                alt="React"
-                className={`reactRotation ${
-                  isFiltered ? "filterproperty" : ""
-                }`}
-              />
-              <img
-                src={Elementoricon}
-                alt="Vue"
-                className={`reactRotation ${
-                  isFiltered ? "filterproperty" : ""
-                }`}
-              />
-            </div>
-          </div>
-          <div className="backend frontandback">
-            <h3>BACKEND / sd</h3>
-            <div className="backendImgStack TechImgStack">
-              <img
-                src={javaicon}
-                alt="Java"
-                className="javaRotation filterproperty"
-              />
-              <img
-                src={pythonicon}
-                alt="python"
-                className="pythonIcon filterproperty"
-              />
-              <img
-                src={javascripticon}
-                alt="Javascript"
-                className="filterproperty"
-              />
-              <img src={springBoot} alt="React" className="filterproperty" />
-              <img src={djangoicon} alt="Vue" className="filterproperty" />
-              <img src={nodeicon} alt="Angular" className="filterproperty" />
-            </div>
-          </div>
-        </div>
-        <div className="services-container">
-          <h1>Certifications</h1>
-          <h3>Hackerank</h3>
-          <h6>
-            <a href="#">Software Engineer intern</a>
-          </h6>
-          <h3>Udemy</h3>
-          <h6>Java 17 masterclass</h6>
-          <h6>Web developement</h6>
-          <h3>Coursera</h3>
-          <h6>Cybersecurity</h6>
-          <h6>Machine Learning</h6>
-          <h6>Web application</h6>
-        </div>
-        <div className="techstack-side">
-          <div className="frontend frontandback">
-            <h3>database</h3>
-            <div className="fronendImgStack TechImgStack">
-              <img
-                src={mysqlicon}
-                alt="mysql"
-                className="mysqlRotation filterproperty"
-              />
-              <img
-                src={mongoicon}
-                alt="mongo"
-                className="mongoIcon filterproperty"
-              />
-              <img
-                src={posgresicon}
-                alt="postgres"
-                className="filterproperty"
-              />
-            </div>
-          </div>
-          <div className="backend frontandback">
-            <h3>other tools</h3>
-            <div className="backendImgStack TechImgStack">
-              <img src={jenkinslogo} alt="Jenkins" className="filterproperty" />
-              <img
-                src={gitlab}
-                alt="gitlab"
-                className="gitlab filterproperty"
-              />
-              <img src={dockericon} alt="docker" className="filterproperty" />
-              <img
-                src={Kubernetes}
-                alt="React"
-                className=" reactRotation filterproperty"
-              />
-            </div>
-          </div>
-        </div>
+      <Featured isFiltered={isFiltered} />
+      <div className="skill-container">
+            
       </div>
     </div>
   );

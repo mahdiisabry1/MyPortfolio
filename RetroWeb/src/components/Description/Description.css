@@ -5,9 +5,26 @@
 
 .profile-desc {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 700px;
+  grid-template-rows: 750px;
   gap: 5px;
+  overflow: hidden;
+}
+
+.profile-desc .information{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #090909;
+  z-index: 10000;
+  top: -100%;
+  transition: top 0.5s ease;
+  background-color: #f8f9fa;
+}
+
+.information.show {
+  top: 0; 
 }
 
 .leftRightImg {
@@ -51,7 +68,7 @@
 .middle-desc .lightup-btn::after {
   content: "Light up the screen";
   position: absolute;
-  bottom: 125%; /* Position tooltip above the button */
+  bottom: 125%; 
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
@@ -190,13 +207,18 @@
   height: 100%;
 }
 
-
 .desc-posts .post .comcicart img {
   position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 1;
+}
+
+.comcicart .descritpion-rotate {
+  position: absolute;
+  color: var(--text-clr);
+  background-color: var(--clr-base2);
 }
 
 .academic-prof {
@@ -249,59 +271,6 @@
 }
 
 
-.skills-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 550px;
-  margin-top: 20px;
-  border: 3px solid;
-}
-
-.techstack-side {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.techstack-side .frontandback h3 {
-  height: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scaleY(1.2);
-}
-
-.TechImgStack {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  height: 80%;
-  justify-items: center;
-}
-
-.TechImgStack img {
-  width: 50%;
-}
-
-.reactRotation {
-  transition: transform 0.5s;
-}
-
-.reactRotation:hover {
-  transform: rotate(180deg); /* Rotates 180 degrees */
-}
-
-.nextIcon {
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid white;
-  transition: transform 1s ease;
-}
-
-.nextIcon:hover {
-  transform: rotate(360deg);
-}
-
 .filterproperty {
   filter: grayscale(100%);
   transition: all ease 0.3s;
@@ -309,4 +278,10 @@
 
 .filterproperty:hover {
   filter: grayscale(0);
+}
+
+.skill-container{
+  height: 100px;
+  width: 100%;
+  background-color: #7d7c7e;
 }

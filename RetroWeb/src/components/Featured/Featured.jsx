@@ -5,12 +5,13 @@ import blogImage from "../../assets/images/focus.jpg";
 import camping from "../../assets/images/camping.jpg";
 import gitIm from "../../assets/images/430944.jpg";
 
-const Featured = () => {
+// eslint-disable-next-line react/prop-types
+const Featured = ({ isFiltered }) => {
   return (
     <div className="featured">
       <div className="elems">
         <div className="elemRL">
-          <div className="elem1Img">
+          <div className={`elem1Img ${isFiltered ? "filterproperty" : ""}`}>
             <img src={blogImage} alt="ONprocess" />
           </div>
           <h2>
@@ -24,7 +25,8 @@ const Featured = () => {
             <span className="currentStatus">UPcoming</span>
           </h2>
           <p>
-            My blog site (under cunstruction) My research articles and news website with crud operations.  
+            My blog site (under cunstruction) My research articles and news
+            website with crud operations.
           </p>
         </div>
       </div>
@@ -43,7 +45,7 @@ const Featured = () => {
       </div>
       <div className="elems">
         <div className="elemRL">
-          <div className="elem3Img">
+          <div className={`elem3Img ${isFiltered ? "filterproperty" : ""}`}>
             <img src={camping} alt="ONprocess" />
           </div>
           <h2 className="gitHead">
@@ -53,9 +55,7 @@ const Featured = () => {
             </a>
             <span className="currentStatus">NEW</span>
           </h2>
-          <p>
-            A camp ground booking app Using nextJS framework
-          </p>
+          <p>A camp ground booking app Using nextJS framework</p>
         </div>
       </div>
     </div>

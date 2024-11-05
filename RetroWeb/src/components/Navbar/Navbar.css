@@ -25,7 +25,6 @@
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid var(--border-clr);
-    border-bottom: 1px solid var(--border-clr);
     margin-bottom: 2px;
 }
 

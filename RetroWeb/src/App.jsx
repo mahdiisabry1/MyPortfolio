@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/views/Home.jsx";
 import { useEffect } from "react";
+import Contact from "./pages/views/Contact.jsx";
 
 function App() {
   // useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
