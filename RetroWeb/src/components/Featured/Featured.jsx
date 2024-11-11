@@ -8,7 +8,7 @@ import gitIm from "../../assets/images/430944.jpg";
 // eslint-disable-next-line react/prop-types
 const Featured = ({ isFiltered }) => {
   return (
-    <div className="featured">
+    <div className="featured container">
       <div className="elems">
         <div className="elemRL">
           <div className={`elem1Img ${isFiltered ? "filterproperty" : ""}`}>

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Description from "../../components/Description/Description";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -9,30 +8,8 @@ import "../styles/Home.css";
 import Welcome from "../../components/Welcome/Welcome";
 
 const Home = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
-
-    // Add mousemove listener
-    document.addEventListener("mousemove", handleMouseMove);
-
-    // Clean up the listener on component unmount
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
   return (
     <>
-      <div
-        className="cursor"
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-        }}
-      />
       <Navbar />
       <div className="displayMedia">
         <Tag />
