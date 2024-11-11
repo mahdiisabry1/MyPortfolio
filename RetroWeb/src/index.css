@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "protestStrike";
+  src: url("./assets/fonts/ProtestStrike.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 :root {
   --clr-base: #fffae5;
