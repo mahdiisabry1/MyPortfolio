@@ -140,7 +140,7 @@ const Description = () => {
                     <img
                       src={uowicon}
                       alt=""
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "contain", position: "relative" }}
                     />
                   </div>
                 </div>
@@ -157,11 +157,14 @@ const Description = () => {
         </div>
       </div>
       <Featured isFiltered={isFiltered} />
-      <div className="skill-container">
+      <div className="skill-container container">
         <div className="techstackchoose">
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">Warning</div>
+              <div className="brutalist-card__alert">UnScripted</div>
+              <div className="currentStatus">
+                <h5>Site is on progress</h5>
+              </div>
             </div>
             <div className="brutalist-card__message">
               This is a brutalist card with a very angry button. Proceed with
@@ -172,19 +175,25 @@ const Description = () => {
                 className="brutalist-card__button brutalist-card__button--mark"
                 href="#"
               >
-                Mark as Read
+                Github Repo
               </a>
               <a
                 className="brutalist-card__button brutalist-card__button--read"
                 href="#"
               >
-                Okay
+                Demo
               </a>
+            </div>
+            <div className="brutalist-card__techstack">
+              ReactJs + Django + Postgresql
             </div>
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">Warning</div>
+              <div className="brutalist-card__alert">SmartTask</div>
+              <div className="currentStatus">
+                <h5>Site not yet deployed</h5>
+              </div>
             </div>
             <div className="brutalist-card__message">
               This is a brutalist card with a very angry button. Proceed with
@@ -195,19 +204,25 @@ const Description = () => {
                 className="brutalist-card__button brutalist-card__button--mark"
                 href="#"
               >
-                Mark as Read
+                Github Repo
               </a>
               <a
                 className="brutalist-card__button brutalist-card__button--read"
                 href="#"
               >
-                Okay
+                Demo
               </a>
+            </div>
+            <div className="brutalist-card__techstack">
+              Angular + Springboot + MySQL
             </div>
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">Warning</div>
+              <div className="brutalist-card__alert">YelpCamp</div>
+              <div className="currentStatus">
+                <h5>Site not yet deployed</h5>
+              </div>
             </div>
             <div className="brutalist-card__message">
               This is a brutalist card with a very angry button. Proceed with
@@ -218,38 +233,45 @@ const Description = () => {
                 className="brutalist-card__button brutalist-card__button--mark"
                 href="#"
               >
-                Mark as Read
+                Github Repo
               </a>
               <a
                 className="brutalist-card__button brutalist-card__button--read"
                 href="#"
               >
-                Okay
+                Demo
               </a>
             </div>
+            <div className="brutalist-card__techstack">MERN + NextJs</div>
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">Warning</div>
+              <div className="brutalist-card__alert">MindForge</div>
+              <div className="currentStatus">
+                <h5>Site has been takendown</h5>
+              </div>
             </div>
             <div className="brutalist-card__message">
-              This is a brutalist card with a very angry button. Proceed with
-              caution, youve been warned.
+              E-learning platform where learners can create technical blogs and
+              Mindmaps to show case their knowledge
             </div>
             <div className="brutalist-card__actions">
               <a
                 className="brutalist-card__button brutalist-card__button--mark"
-                href="#"
+                href="https://github.com/mahdiisabry1/SDGP-Repository"
+                target="_blank"
               >
-                Mark as Read
+                Github Repo
               </a>
               <a
                 className="brutalist-card__button brutalist-card__button--read"
-                href="#"
+                href="https://mindforge-platform.netlify.app/"
+                target="_blank"
               >
-                Okay
+                Demo
               </a>
             </div>
+            <div className="brutalist-card__techstack">MERN</div>
           </div>
         </div>
       </div>

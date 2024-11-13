@@ -1,5 +1,6 @@
 import "./Welcome.css";
 // import comicbg from "../../assets/images/comicbg.png";
+import hacker from"../../assets/images/hackertheme.png"
 
 const Welcome = () => {
   return (
@@ -7,9 +8,7 @@ const Welcome = () => {
       <div className="main-banner">
         <div className="banner">
           <div className="headline">
-            <p>
-              SriLankan Web Application Developer | Crafting Global Solutions
-            </p>
+            <img src={hacker} alt="" />
           </div>
         </div>
       </div>
