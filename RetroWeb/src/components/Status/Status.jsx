@@ -13,7 +13,7 @@ const Status = () => {
             <SiMysql /> {""}
             <SiPython /> {""}
             <FaJava /> {""}
-            <SiJavascript className="javascript"/> {""}| Computer Science | Fresh Talent, Ready to
+            <SiJavascript className="javascript"/> {""}| <span className="computerscience">Computer Science</span> | Fresh Talent, Ready to
             Innovate and Code the Future | {""}
             <SiJavascript /> {""}
             <FaJava /> {""}

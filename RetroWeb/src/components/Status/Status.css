@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+
 .statusBar {
   background: var(--background-linear);
   gap: 10px;
@@ -23,6 +25,10 @@
   align-items: center;
   gap: 15px;
   font-size: 25px;
+}
+
+.computerscience {
+  font-family: "Qwitcher Grypen", cursive;
 }
 
 @media screen and (max-width: 1100px) {

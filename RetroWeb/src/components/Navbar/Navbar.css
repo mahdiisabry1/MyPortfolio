@@ -38,21 +38,14 @@
 
 .navHeader .middleHeader {
   position: relative;
-  left: 3%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 80%;
+  width: 20%;
+  left: 2%;
 }
 
-.navHeader .middleHeader h1 {
-  font-family: "BounesvaFont";
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 700;
-  font-size: 60px;
-}
-
-.navHeader .middleHeader h6 {
-  font-size: 10px;
+.navHeader .middleHeader svg{
+  height: 100%;
+  width: 100%;
 }
 
 .navHeader .innerHeader {

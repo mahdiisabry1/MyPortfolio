@@ -1,8 +1,23 @@
+.rotate-your-device {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .displayMedia {
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .display {
+    display: none;
+  }
+  .rotate-your-device {
+    width: 100%;
+    display: block;
+  }
+}
+
 body {
   cursor: none;
 }

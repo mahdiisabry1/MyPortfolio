@@ -6,19 +6,29 @@ import Tag from "../../components/Tag/Tag";
 import "../styles/Home.css";
 import Welcome from "../../components/Welcome/Welcome";
 import Footer from "../../components/Footer/Footer";
+import Res from "../../components/Responsive/Res";
+import Loader from "../../components/Loader/Loader";
+
+// import Loader from "../../components/Loader/Loader";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <div className="displayMedia">
-        <Tag />
-        <Welcome />
-        <Status />
+      <div className="rotate-your-device">
+        <Res />
       </div>
-      <Header />
-      <Description />
-      <Footer />
+      <Loader />
+      <div className="display">
+        <Navbar />
+        <div className="displayMedia">
+          <Tag />
+          <Welcome />
+          <Status />
+        </div>
+        <Header />
+        <Description />
+        <Footer />
+      </div>
     </>
   );
 };

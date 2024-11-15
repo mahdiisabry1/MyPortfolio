@@ -33,6 +33,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "russianFont";
+  src: url("./assets/fonts/Russian.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --clr-base: #fffae5;
@@ -93,7 +99,9 @@ a {
   cursor: none;
 }
 
-button, input, label{
+button,
+input,
+label {
   cursor: none;
 }
 
