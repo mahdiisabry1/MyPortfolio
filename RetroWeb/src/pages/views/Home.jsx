@@ -7,18 +7,18 @@ import "../styles/Home.css";
 import Welcome from "../../components/Welcome/Welcome";
 import Footer from "../../components/Footer/Footer";
 import Res from "../../components/Responsive/Res";
-import Loader from "../../components/Loader/Loader";
+
 
 // import Loader from "../../components/Loader/Loader";
 
 const Home = () => {
+
   return (
     <>
-      <div className="rotate-your-device">
-        <Res />
-      </div>
-      <Loader />
       <div className="display">
+        <div className="rotate-your-device">
+          <Res />
+        </div>
         <Navbar />
         <div className="displayMedia">
           <Tag />

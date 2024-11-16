@@ -27,6 +27,17 @@
   top: 0;
 }
 
+.hideMap:hover{
+color: #004280;}
+
+.palestine-map {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+}
+
 .leftRightImg {
   height: 100%;
   width: 100%;
@@ -123,7 +134,7 @@
   display: inline-block;
 }
 
-.button .icon svg {
+.button .icon .btn-svg {
   height: 100%;
   width: 100%;
   fill: #a5a5a5;
@@ -426,12 +437,16 @@
   text-align: center;
 }
 
+path:hover{
+  opacity: 0.6;
+  fill: #444245;
+}
+
 @media (max-width: 1320px) {
   .skill-container .techstackchoose {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 
 @media (max-width: 680px) {
   .skill-container .techstackchoose {
@@ -444,7 +459,7 @@
     display: none;
   }
 
-  .profile-desc{
+  .profile-desc {
     grid-template-columns: 1fr;
   }
 }

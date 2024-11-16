@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import "./Description.css";
 import leftImg from "../../assets/images/v55.png";
@@ -7,6 +8,7 @@ import vintageschool from "../../assets/images/vintageschool.jpg";
 import DallE from "../../assets/icons/DallE.webp";
 import uowicon from "../../assets/icons/UOW.png";
 import Featured from "../Featured/Featured";
+import Palestine from "./Palestine";
 
 const Description = () => {
   const [isFiltered, setIsFiltered] = useState(true);
@@ -30,7 +32,20 @@ const Description = () => {
     <div className="profile-container container">
       <div className="profile-desc">
         <div className={`information ${isVisible ? "show" : ""}`}>
-          <h1 onClick={handleHideClick}>X</h1>
+          <div
+            onClick={handleHideClick}
+            style={{
+              position: "absolute",
+              fontSize: "40px",
+              paddingLeft: "20px",
+            }}
+            
+          >
+            <span className="hideMap">X</span>
+          </div>
+          <div className="palestine-map">
+            <Palestine />
+          </div>
         </div>
         <div className={`leftRightImg ${isFiltered ? "filterproperty" : ""}`}>
           <img src={leftImg} alt="" />
@@ -48,6 +63,7 @@ const Description = () => {
                   viewBox="0 0 24 24"
                   fill=""
                   xmlns="http://www.w3.org/2000/svg"
+                  className="btn-svg"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
@@ -84,11 +100,6 @@ const Description = () => {
           >
             <div className="imageBanner">
               <img src={palestine} alt="" />
-            </div>
-            <div className="bannerDesc">
-              <div className="serviceBanner-1"></div>
-              <div className="serviceBanner-2"></div>
-              <div className="serviceBanner-3"></div>
             </div>
           </div>
           <div className="desc-posts">
@@ -184,9 +195,7 @@ const Description = () => {
                 Demo
               </a>
             </div>
-            <div className="brutalist-card__techstack">
-              deeplearning
-            </div>
+            <div className="brutalist-card__techstack">deeplearning</div>
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">

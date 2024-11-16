@@ -5,7 +5,6 @@ const Footer = () => {
     <>
       <div className="footerMain">
         <div></div>
-        <div></div>
       </div>
     </>
   );
