@@ -250,7 +250,6 @@
   right: 0;
   height: 100%;
   z-index: 2;
-  user-select: text;
   padding: 15px 20px;
   color: var(--clr-base2);
   background-color: var(--baseclr-change);
@@ -262,10 +261,6 @@
 .comcicart:hover .text-overlay {
   opacity: 1;
   transform: translateY(0);
-}
-
-.text-overlay h3::selection {
-  background-color: black;
 }
 
 .text-overlay .uowImg {

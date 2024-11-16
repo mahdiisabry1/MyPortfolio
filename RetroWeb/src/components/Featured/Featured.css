@@ -1,196 +1,53 @@
 .featured {
-    font-family: 'AthenaFont', sans-serif;
-    width: 100%;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  border: 5px solid;
 }
 
-.elems {
-    /* background-color: #b3b3b3; */
-    width: 33.33%;
-    height: 100%;
-    position: relative;
+.taptoreadblog {
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 23px;
+  border: 3px solid;
+  box-shadow: 9px 8px 0;
 }
 
-
-/* .featured .elems:nth-of-type(2) {
-    position: relative;
-    padding: 20px;
-    overflow: hidden;
-    
+.timer {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
-.featured .elems:nth-of-type(2)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../../assets/images/git.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(2px) grayscale(100%);
-    z-index: 1;
-    transition: filter 0.5s ease-in-out;
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  border: 5px solid;
+  box-shadow: 10px 10px 0;
 }
 
-.featured .elems:nth-of-type(2):hover::before {
-    filter: blur(0);
-} */
-
-.elems .elemMid {
-    text-align: center;
-    color: var(--text-clr);
-    position: relative;
-    z-index: 2;
-    height: 85%;
-    margin: 25px;
-    padding: 0 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.number {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.elems .elemRL {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 15px;
-    justify-content: space-evenly;
-    gap: 10px;
+.label {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-transform: uppercase;
 }
 
-.elems .elemRL .elem1Img {
-    height: 160px;
-    width: 100%;
-    border: 0.5px solid var(--border-clr);
-    overflow: hidden;
-    border-radius: 2px;
+.separator {
+  font-size: 2rem;
+  color: var(--text-clr);
 }
-
-.elems .elemRL .elem1Img img{
-    filter: blur(1px) grayscale(20%);
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: 0.5s;
-}
-
-.elems .elemRL p{
-    text-align: justify;
-}
-
-
-
-.elems .elemMid .gitHead{
-    font-size: 42px;
-    font-family: 'BounesvaFont', sans-serif;
-    transform: scaleY(1.8);
-}
-
-.elems .elemRL .elem1Img img:hover{
-    filter: blur(0);
-    scale: 1.05;
-}
-
-
-.elemMid::before,
-.elemMid::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 75%;
-    width: 5px;
-    background-color: var(--border-clr);
-}
-
-.elemMid::before {
-    left: 0;
-    /* Left border */
-}
-
-.elemMid::after {
-    right: 0;
-    /* Right border */
-}
-
-.elems .elemMid a {
-    position: relative;
-    text-decoration: none;
-}
-
-.elems .elemMid a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    width: 0;
-    height: 2px;
-    background-color: currentColor;
-    transition: width 0.3s ease-out;
-}
-
-.elems .elemMid a:hover::after {
-    width: 100%;
-}
-
-
-.currentStatus{
-    font-size: 15px;
-    background-color: var(--current-clr);
-    margin: 2px;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-.elems .elemRL .elem3Img {
-    height: 160px;
-    width: 100%;
-    border: 1px solid var(--border-clr);
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.elems .elemRL .elem3Img img {
-    filter: blur(1px) grayscale(20%);
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: 0.5s;
-}
-
-.elems .elemRL .elem3Img img:hover {
-    filter: blur(0);
-    scale: 1.05;
-}
-
-@media (max-width: 1250px) {
-    .elems .elemRL{
-        display: none;
-    }
-
-    .elems:nth-child(2){
-        width: 100%;
-    }
-
-    .elems:nth-child(1),
-    .elems:nth-child(3){
-        width: 0;
-    }
-
-    .featured .elems .elemMid{
-        background-size: 25%;
-    }
-    
-    .featured .elems .elemMid:hover{
-        background-size: 35%;
-    }
-
-}
-

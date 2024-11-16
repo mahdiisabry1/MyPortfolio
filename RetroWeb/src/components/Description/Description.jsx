@@ -161,9 +161,9 @@ const Description = () => {
         <div className="techstackchoose">
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">UnScripted</div>
+              <div className="brutalist-card__alert">MalwareVision</div>
               <div className="currentStatus">
-                <h5>Site is on progress</h5>
+                <h5>Site on progress</h5>
               </div>
             </div>
             <div className="brutalist-card__message">
@@ -185,7 +185,7 @@ const Description = () => {
               </a>
             </div>
             <div className="brutalist-card__techstack">
-              ReactJs + Django + Postgresql
+              deeplearning
             </div>
           </div>
           <div className="brutalist-card">
@@ -214,7 +214,7 @@ const Description = () => {
               </a>
             </div>
             <div className="brutalist-card__techstack">
-              Angular + Springboot + MySQL
+              React + Springboot + MySQL
             </div>
           </div>
           <div className="brutalist-card">

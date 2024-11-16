@@ -1,16 +1,7 @@
 .footerMain {
   height: 400px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  background-color: var(--baseclr-change);
 }
 
-.socialMedia .mediaIcons {
-  list-style-type: circle;
-  display: flex;
-  gap: 40px;
-}
-
-.socialMedia .mediaIcons li:hover{
-    text-decoration: underline;
-    list-style-type: square;
-}
