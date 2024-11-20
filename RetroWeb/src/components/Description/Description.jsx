@@ -46,6 +46,9 @@ const Description = () => {
           <div className="palestine-map">
             <Palestine />
           </div>
+          <div className="palestine-about">
+            Statistics
+          </div>
         </div>
         <div className={`leftRightImg ${isFiltered ? "filterproperty" : ""}`}>
           <img src={leftImg} alt="" />

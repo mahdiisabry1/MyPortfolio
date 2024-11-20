@@ -21,6 +21,7 @@
   top: -100%;
   transition: top 0.5s ease;
   background-color: var(--clr-base);
+  display: flex;
 }
 
 .information.show {
@@ -36,6 +37,11 @@ color: #004280;}
   justify-content: center;
   height: 100%;
   width: 40%;
+}
+
+.palestine-about{
+  height: 100%;
+  width: 60%;
 }
 
 .leftRightImg {
