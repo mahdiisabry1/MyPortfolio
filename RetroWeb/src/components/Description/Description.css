@@ -454,7 +454,7 @@ path:hover{
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 770px) {
   .skill-container .techstackchoose {
     grid-template-columns: 1fr;
   }

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import "./Description.css";
 import leftImg from "../../assets/images/v55.png";

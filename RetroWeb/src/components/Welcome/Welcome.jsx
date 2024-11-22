@@ -13,10 +13,10 @@ const Welcome = () => {
         // 10 binary elements
         const binaryElement = document.createElement("div");
         binaryElement.classList.add("binary");
-        binaryElement.innerText = Math.random() > 0.5 ? "0" : "1"; 
+        binaryElement.innerText = Math.random() > 0.5 ? "0" : "1";
 
         binaryElement.style.left = `${Math.floor(Math.random() * 100)}vw`;
-        binaryElement.style.animationDuration = `${Math.random() * 5 + 7}s`; 
+        binaryElement.style.animationDuration = `${Math.random() * 5 + 7}s`;
 
         container.appendChild(binaryElement);
       }
@@ -38,13 +38,12 @@ const Welcome = () => {
             <div className="wordstyle">
               <img src={hacker} alt="" />
               <h1>
-                <span className="firstscale">К</span>
-                <span className="secondscale">Р</span>
-                <span className="normalscale">А</span>
-                <span className="normalscale">С</span>
-                <span className="normalscale">Н</span>
+                <span className="firstscale">С</span>
+                <span className="secondscale">Е</span>
+                <span className="normalscale">Р</span>
                 <span className="normalscale">А</span>
                 <span className="normalscale">Я</span>
+                <span>--</span>
                 <span className="normalscale">Ш</span>
                 <span className="normalscale">Л</span>
                 <span className="normalscale">Я</span>
