@@ -32,7 +32,7 @@ const Featured = ({ isFiltered }) => {
   }, []);
   return (
     <div className="featured container">
-      <div className="taptoreadblog">Content On the way 2025</div>
+      <div className="taptoreadblog">2025</div>
       <div className="timer">
         <div className="time-box">
           <span className="number">{timeLeft.days}</span>

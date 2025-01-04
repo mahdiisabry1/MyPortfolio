@@ -26,7 +26,8 @@
 }
 
 .slider h2 a:hover{
-    background-color: #25D366;
+    background-color: #d32525;
+    color: white;
 }
 
 @keyframes move-rtl{
