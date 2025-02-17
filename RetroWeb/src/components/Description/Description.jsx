@@ -38,16 +38,13 @@ const Description = () => {
               fontSize: "40px",
               paddingLeft: "20px",
             }}
-            
           >
             <span className="hideMap">X</span>
           </div>
           <div className="palestine-map">
             <Palestine />
           </div>
-          <div className="palestine-about">
-            Statistics
-          </div>
+          <div className="palestine-about">Statistics</div>
         </div>
         <div className={`leftRightImg ${isFiltered ? "filterproperty" : ""}`}>
           <img src={leftImg} alt="" />
@@ -174,7 +171,7 @@ const Description = () => {
         <div className="techstackchoose">
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">MalwareVision</div>
+              <div className="brutalist-card__alert">AI Project</div>
               <div className="currentStatus">
                 <h5>Site on progress</h5>
               </div>
@@ -201,7 +198,7 @@ const Description = () => {
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">SmartTask</div>
+              <div className="brutalist-card__alert">YelpCamp</div>
               <div className="currentStatus">
                 <h5>Site not yet deployed</h5>
               </div>
@@ -230,7 +227,7 @@ const Description = () => {
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">YelpCamp</div>
+              <div className="brutalist-card__alert">CodeLingo</div>
               <div className="currentStatus">
                 <h5>Site not yet deployed</h5>
               </div>
@@ -259,7 +256,7 @@ const Description = () => {
             <div className="brutalist-card__header">
               <div className="brutalist-card__alert">MindForge</div>
               <div className="currentStatus">
-                <h5>Site has been takendown</h5>
+                <h5>Site is offline</h5>
               </div>
             </div>
             <div className="brutalist-card__message">

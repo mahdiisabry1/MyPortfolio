@@ -37,18 +37,18 @@ const Welcome = () => {
           <div className="banner">
             <div className="wordstyle">
               <img src={hacker} alt="" />
-              <h1>
-                <span className="firstscale">С</span>
-                <span className="secondscale">Е</span>
+              <h1 className="textstyling">
+                <span className="firstscale">Р</span>
+                <span className="secondscale">А</span>
+                <span className="normalscale">З</span>
                 <span className="normalscale">Р</span>
                 <span className="normalscale">А</span>
-                <span className="normalscale">Я</span>
-                <span>--</span>
-                <span className="normalscale">Ш</span>
-                <span className="normalscale">Л</span>
-                <span className="normalscale">Я</span>
-                <span className="secondscale">П</span>
-                <span className="firstscale">А</span>
+                <span className="normalscale">Б</span>
+                <span className="normalscale">О</span>
+                <span className="normalscale">Т</span>
+                <span className="normalscale">Ч</span>
+                <span className="secondscale">И</span>
+                <span className="firstscale">К</span>
               </h1>
             </div>
           </div>
