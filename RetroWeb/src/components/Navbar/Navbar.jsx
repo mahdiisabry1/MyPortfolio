@@ -1,8 +1,19 @@
 import "../Navbar/Navbar.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BiSolidFoodMenu } from "react-icons/bi";
 
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Close menu on ESC press
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
   // Function to toggle dark mode
   const darkmode = () => {
     const setTheme = document.body;
@@ -65,10 +76,42 @@ const Navbar = () => {
           <span className="back"></span>
           <span className="front"></span>
         </button>
-        <BiSolidFoodMenu
-          className="ri-menu-4-line"
-          style={{ cursor: "none" }}
-        />
+        <div>
+          <BiSolidFoodMenu
+            className={`hamburger ${isOpen ? "open" : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          />
+
+          <div
+            className={`menu-overlay ${isOpen ? "active" : ""}`}
+            onClick={() => setIsOpen(false)}
+          >
+            <nav className="menu-content">
+              <ul>
+                <li>
+                  <a href="/" onClick={() => setIsOpen(false)}>
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" onClick={() => setIsOpen(false)}>
+                    CONTACT
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/your-profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    LINKEDIN
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -194,7 +194,9 @@ const Description = () => {
                 Demo
               </a>
             </div>
-            <div className="brutalist-card__techstack">deeplearning</div>
+            <div className="brutalist-card__techstack">
+              deeplearning and NLP
+            </div>
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
@@ -222,14 +224,14 @@ const Description = () => {
               </a>
             </div>
             <div className="brutalist-card__techstack">
-              React + Springboot + MySQL
+              MERN
             </div>
           </div>
           <div className="brutalist-card">
             <div className="brutalist-card__header">
-              <div className="brutalist-card__alert">CodeLingo</div>
+              <div className="brutalist-card__alert">YoutubeClone</div>
               <div className="currentStatus">
-                <h5>Site not yet deployed</h5>
+                <h5>Site on progress</h5>
               </div>
             </div>
             <div className="brutalist-card__message">
