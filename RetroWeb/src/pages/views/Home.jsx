@@ -5,8 +5,9 @@ import Status from "../../components/Status/Status";
 import Tag from "../../components/Tag/Tag";
 import "../styles/Home.css";
 import Welcome from "../../components/Welcome/Welcome";
-import Footer from "../../components/Footer/Footer";
+// import Footer from "../../components/Footer/Footer";
 import Res from "../../components/Responsive/Res";
+import Slogan from "../../components/Slogan/Slogan";
 
 // import Loader from "../../components/Loader/Loader";
 
@@ -25,7 +26,8 @@ const Home = () => {
         </div>
         <Header />
         <Description />
-        <Footer />
+        <Slogan />
+        {/* <Footer /> */}
       </div>
     </>
   );

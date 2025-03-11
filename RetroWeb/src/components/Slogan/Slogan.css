@@ -1,0 +1,22 @@
+.theSloganContainer{
+    font-family: 'LongBeach';
+}
+
+.container1{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    transform: scaleY(3.5);
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+.container3{
+    display: flex;
+    justify-content: end;
+    font-size: 40px;
+    transform: scaleY(3.5);
+}

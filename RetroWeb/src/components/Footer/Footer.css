@@ -1,7 +1,4 @@
 .footerMain {
-  height: 400px;
-  display: grid;
-  grid-template-rows: 4fr 1fr;
   background-color: var(--baseclr-change);
 }
 
