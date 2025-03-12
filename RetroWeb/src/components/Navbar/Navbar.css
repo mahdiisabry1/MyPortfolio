@@ -43,7 +43,7 @@
   left: 2%;
 }
 
-.navHeader .middleHeader svg{
+.navHeader .middleHeader svg {
   height: 100%;
   width: 100%;
 }
@@ -159,7 +159,6 @@
   transform: rotate(180deg);
 }
 
-
 /* Overlay */
 .menu-overlay {
   position: fixed;
@@ -210,7 +209,7 @@
 
 .menu-content a {
   font-size: 3.5vw;
-  font-family: 'Arial Black', sans-serif;
+  font-family: "protestStrike";
   color: #2c2c2c;
   text-decoration: none;
   position: relative;
@@ -224,7 +223,7 @@
 }
 
 .menu-content a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
