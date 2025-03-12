@@ -100,7 +100,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/in/your-profile"
+                    href="https://www.linkedin.com/in/mahdi-sabry-919546286/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
