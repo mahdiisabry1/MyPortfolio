@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "../Featured/Featured.css";
+import cv from "../../assets/docs/mySoftwareEngineerCv.pdf"
 
 // eslint-disable-next-line react/prop-types
 const Featured = ({ isFiltered }) => {
@@ -101,7 +102,12 @@ const Featured = ({ isFiltered }) => {
 
           <div className="retro-section">
             <h2 className="retro-heading">Resume</h2>
-            <a href="#" className="retro-button">
+            <a
+              href={cv}
+              type="application/pdf"
+              target="blank"
+              className="retro-button"
+            >
               Download PDF
             </a>
           </div>
