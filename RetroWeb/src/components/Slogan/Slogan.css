@@ -1,22 +1,29 @@
-.theSloganContainer{
-    font-family: 'LongBeach';
+.theSloganContainer {
+  font-family: "LongBeach";
 }
 
-.container1{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 40px;
-    transform: scaleY(3.5);
+.container1 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30px;
+  transform: scaleY(3.5);
 }
 
-.container2{
-    display: flex;
-    justify-content: center;
+.container2 {
+  display: flex;
+  justify-content: center;
 }
 
-.container3{
-    display: flex;
-    justify-content: end;
-    font-size: 40px;
-    transform: scaleY(3.5);
+.container3 {
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+  transform: scaleY(3.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .container1,
+  .container3 {
+    font-size: 10px;
+  }
 }
