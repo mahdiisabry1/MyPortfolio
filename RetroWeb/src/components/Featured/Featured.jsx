@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "../Featured/Featured.css";
-import cv from "../../assets/docs/mySoftwareEngineerCv.pdf"
+import cv from "../../assets/docs/SECV.pdf"
 
 // eslint-disable-next-line react/prop-types
 const Featured = ({ isFiltered }) => {
