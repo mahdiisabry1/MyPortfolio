@@ -24,6 +24,6 @@
 @media only screen and (max-width: 600px) {
   .container1,
   .container3 {
-    font-size: 10px;
+    font-size: 5px;
   }
 }
