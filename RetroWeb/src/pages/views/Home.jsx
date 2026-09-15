@@ -27,7 +27,7 @@ const Home = () => {
         <Header />
         <Description />
         <Slogan />
-        {/* <Footer /> */}
+        <Footer /> 
       </div>
     </>
   );
